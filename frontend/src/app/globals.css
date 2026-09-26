@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@theme {
+  --color-disaj-black: #1A1A1A;
+  --color-disaj-gold: #D4AF37;
+  --color-disaj-light: #F5F5F5;
+}
