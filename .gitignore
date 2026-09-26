@@ -1,0 +1,13 @@
+# Python & Django
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+db.sqlite3
+media/
+.env
+
+# Next.js & Node (for when you add the frontend)
+node_modules/
+.next/
