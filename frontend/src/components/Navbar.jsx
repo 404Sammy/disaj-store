@@ -20,12 +20,12 @@ export default function Navbar() {
           </span>
         </Link>
 
-        {/* Clean Navigation */}
-        <div className="hidden lg:flex items-center gap-8 text-sm font-semibold text-zinc-500">
-          <Link href="/shop" className="hover:text-zinc-950 transition-colors">Catalog</Link>
-          <Link href="/shop" className="hover:text-zinc-950 transition-colors">Smartphones</Link>
-          <Link href="/shop" className="hover:text-zinc-950 transition-colors">Laptops</Link>
-          <Link href="/shop" className="hover:text-zinc-950 transition-colors">Audio</Link>
+        {/* Tailored Disaj Navigation */}
+        <div className="hidden md:flex items-center gap-8 text-sm font-semibold text-zinc-500">
+          <Link href="/shop" className="hover:text-zinc-950 transition-colors">Shop All</Link>
+          <Link href="/shop" className="hover:text-zinc-950 transition-colors">New Phones</Link>
+          <Link href="/shop" className="hover:text-zinc-950 transition-colors">Refurbished</Link>
+          <Link href="/shop" className="hover:text-zinc-950 transition-colors">Accessories</Link>
         </div>
 
         {/* Actions & Cart */}
@@ -39,11 +39,9 @@ export default function Navbar() {
             
             {/* Safe Cart Count with Floating Dot */}
             {isLoaded && cartCount > 0 && (
-              <>
-                <span className="absolute -top-1.5 -right-1.5 bg-yellow-500 text-zinc-950 text-[10px] font-extrabold w-4 h-4 rounded-full flex items-center justify-center border-2 border-white">
-                  {cartCount}
-                </span>
-              </>
+              <span className="absolute -top-1.5 -right-1.5 bg-yellow-500 text-zinc-950 text-[10px] font-extrabold w-4 h-4 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
+                {cartCount}
+              </span>
             )}
           </Link>
         </div>
